@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #bc9df6;
+  --secondry-color: #000000;
+  --light-blue: #57a6c8;
+  --light-gray: #d9d9d9;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.active-link {
+  background-color: var(--light-blue);
+}
+
+.chart-container {
+  height: 350px;
+  width: 100%;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+}
+
+.dashboard-tables .rdt_TableBody {
+  background-color: var(--light-gray) !important;
+}
+
+.dashboard-tables .hSQKHD {
+  font-size: 18px !important;
+  background-color: transparent !important;
+  min-height: 48px;
+}
+
+.dashboard-tables .hSQKHD:not(:last-of-type) {
+  border-bottom-width: 0 !important;
+}
+
+.dashboard-tables .jDljLp {
+  display: flex;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px !important;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+
+.Empl-single-card {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.emplyee-selects .css-13cymwt-control,
+.css-t3ipsp-control {
+  min-height: 50px !important;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  background-color: hsl(0, 0%, 100%);
+  border-color: transparent !important;
+  border-radius: 15px !important;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 150px;
+  box-shadow: 0 0 0 1px #ffffff !important;
+}
+
+.emplyee-selects .css-1jqq78o-placeholder {
+  grid-area: 1 / 1 / 2 / 3;
+  color: black !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+
+.emplyee-selects .css-tr4s17-option {
+  background-color: #bc9df6 !important;
+  color: hsl(0, 0%, 100%);
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.css-1u9des2-indicatorSeparator {
+  width: 0px !important;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.hSQKHD {
+  background-color: #d9d9d9 !important;
+  font-size: 18px !important;
+}
+
+.hSQKHD:not(:last-of-type) {
+  border-bottom-style: solid;
+  border-bottom-width: 0 !important;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+.dODGfY {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 52px;
+  border-bottom-width: 2px !important;
+  border-bottom-color: black !important;
+  border-bottom-style: solid;
+}
+
+.rdt_TableHeadRow {
+  font-size: 20px !important;
+}
+
+.employee-data-table .rdt_TableBody {
+  max-height: 410px;
+  overflow-y: scroll;
+}
+
+.employee-data-table .fzVRQD {
+  font-size: 18px !important;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #d9d9d9 !important;
+  min-height: 48px;
+}
+.employee-data-table .fzVRQD:not(:last-of-type) {
+  border-bottom-style: solid;
+  border-bottom-width: 0px !important;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+.employee-data-table input {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0px;
+  background: transparent !important;
+  width: 100% !important;
+}
+
+@media (max-width: 766px) and (min-width: 220px) {
+  .chart-container {
+    height: auto;
+    width: 100%;
+  }
+
+  .emplyee-selects .css-13cymwt-control,
+  .css-t3ipsp-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 767px) {
+}
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .chart-container {
+    height: 100%;
+    width: 100%;
+  }
+}

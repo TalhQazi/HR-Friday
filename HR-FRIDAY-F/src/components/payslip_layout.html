@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../static/css/extra.css">
+    <style>
+        body {
+    padding: 20px;
+}
+
+.payslip {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="payslip box" id="payslip">
+        <h1 class="has-text-centered" style="font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;">Payslip - Emp Name - july, 2024</h1>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h2 class="subtitle">Company Details</h2>
+                    <p><strong>Company Name:</strong> FRIDAY</p>
+                    <p><strong>Address:</strong> 123 Business Rd, Business City, BC 12345</p>
+                    <p><strong>Email:</strong> info@friday.com</p>
+                    <p><strong>Phone:</strong> +92-344-1010960</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h2 class="subtitle">Employee Details</h2>
+                    <p><strong>Employee Name:</strong> <span id="emp_name">Muhammad Ishaq</span></p>
+                    <p><strong>Employee ID:</strong> 12345</p>
+                    <p><strong>Department:</strong> Software</p>
+                    <p><strong>Designation:</strong> Software Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h2 class="subtitle">Pay Details</h2>
+            <table class="table is-fullwidth is-striped">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td>$4000</td>
+                    </tr>
+                    <tr>
+                        <td>Overtime pay</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Commissions</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Deductions</td>
+                        <td>-$100</td>
+                    </tr>
+                    <tr>
+                        <td>Tax cut</td>
+                        <td>-$100</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gross Pay</strong></td>
+                        <td><strong>$4500</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Net Pay</strong></td>
+                        <td><strong>$4400</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <p><strong>Pay Date:</strong> 6th June 2024</p>
+                    <p><strong>Authorized By:</strong> HR Manager</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <p><strong>Employee Signature:</strong> ____________________</p>
+                    <p><strong>Employer Signature:</strong> ____________________</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

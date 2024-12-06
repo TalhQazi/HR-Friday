@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);.desc,.posth1{font-weight:600}html{overflow-x:hidden}@media screen and (max-width:1023px){.navbar-menu{background-color:#baacf8}}@media only screen and (min-width:32em){.hero-title{font-size:10vh}}.navbar span{color:#6b5b95;font-family:Poppins,sans-serif;padding-inline:0pc}.navbar-burger{margin-left:auto;margin-right:0}
+
+#firsth1{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+#input1{
+    border: #864def solid 2px;
+    border-radius: 1rem;
+    height: 3.3rem; 
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: black;
+    width: 23rem
+}
+#btn1{
+    background: #864def;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 0.1rem;
+    border-radius: 1rem;
+    padding-bottom: 4px;
+    border: none;
+    padding-inline: 1rem;
+}
+
+.clmn2{
+    background-color: #864def;
+    color: #fff;
+    border-radius: 1.15rem;
+}
+#firsth2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: #fff solid 2px;
+    letter-spacing: -1px;
+}
+form .label{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+form .input{
+    background: transparent;
+    color: #fff;
+    border-radius: 0.91rem;
+}
+
+.clmn1{
+    background-color: #fff;
+    border: #864def solid 2px;
+    border-radius: 1.5rem;
+}
+#secondh2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: black solid 2px;
+    letter-spacing: -1px;
+}
+.btn2{
+    background: #fff;
+    color: #864def;
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    padding-bottom: 4px;
+    border: none;
+    padding-inline: 1rem;
+}

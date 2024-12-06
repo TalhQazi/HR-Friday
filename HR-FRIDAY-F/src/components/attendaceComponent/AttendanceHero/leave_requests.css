@@ -1,0 +1,74 @@
+.field {
+  width: 80%;
+}
+
+.modal-card {
+  width: 50%; /* Reduce width for a smaller modal */
+  background: #fff;
+  border: black solid 2px;
+  border-radius: 1.5rem;
+  margin: auto; /* Center the modal */
+}
+
+.modal-card-body {
+  padding-block: 10px;
+}
+
+.modal-content {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the modal content */
+  align-items: center; /* Center the modal content vertically */
+}
+
+.modal-card-title {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.delete {
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.leave-request {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.leave-details {
+  padding: 10px;
+}
+
+.leave-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deny {
+  background-color: #f32f2f;
+  color: black;
+  border: none;
+  flex: 1;
+  border-bottom-left-radius: 1rem;
+  margin-left: 0rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.approve {
+  background-color: #91d27a;
+  color: black;
+  border: none;
+  flex: 1;
+  border-bottom-right-radius: 1rem;
+  margin-right: 0rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+}

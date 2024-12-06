@@ -1,0 +1,321 @@
+<div style={{ overflowX: "hidden", fontFamily: "Poppins" }}>
+      {isManager && (
+        <section className="hero">
+          <div
+            className="hero-head"
+            style={{ borderBottom: "black solid 1px" }}
+          >
+            <div className="container">
+              <nav className="navbar">
+                <div className="container">
+                  <div className="navbar-brand">
+                    <a className="navbar-item" href="/">
+                      <img
+                        src={fridayImage}
+                        alt="Logo"
+                        height="250"
+                        width="100"
+                        style={{ maxHeight: "unset" }}
+                      />
+                    </a>
+                    <input
+                      className="input"
+                      style={{
+                        marginBlock: "0.51rem",
+                        width: "20rem",
+                        height: "70%",
+                        border: "1px solid black",
+                        borderRadius: "1rem",
+                        marginLeft: "2.5rem",
+                      }}
+                      type="text"
+                      placeholder="Search Anything"
+                    />
+                    <span
+                      className="navbar-burger burger"
+                      data-target="navbarMenu"
+                    >
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                  <div id="navbarMenu" className="navbar-menu">
+                    <div
+                      className="navbar-end"
+                      style={{ marginLeft: "auto", marginRight: "unset" }}
+                    >
+                      <span className="navbar-item">
+                        <figure>
+                          <img
+                            style={{ paddingRight: "1rem" }}
+                            src={bellImage}
+                            alt=""
+                          />
+                        </figure>
+                      </span>
+                      <span className="navbar-item">
+                        <figure>
+                          <img
+                            style={{ paddingRight: "1rem" }}
+                            src={messageImage}
+                            alt=""
+                          />
+                        </figure>
+                      </span>
+
+                      <span className="navbar-item">
+                        <figure>
+                          <img
+                            style={{
+                              maxHeight: "2.5rem",
+                              width: "2.5rem",
+                              borderRadius: "1.25rem",
+                            }}
+                            src={womanImage}
+                            alt=""
+                          />
+                        </figure>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div
+            className="hero-body"
+            style={{ padding: "1rem 2rem", flexDirection: "column" }}
+          >
+            <div className="container is-fluid">
+              <div className="columns">
+                {/* Sidebar */}
+                <div className="column is-one-fifth sidebar">
+                  <aside className="menu">
+                    <p className="menu-label">Dashboard</p>
+                    <ul className="menu-list">
+                      <li>
+                        <Link to={"/"} className="is-active">
+                          Dashboard
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/employees"}>Employees</Link>
+                      </li>
+                      <li>
+                        <Link to={"/payroll"}>Payroll</Link>
+                      </li>
+                      <li>
+                        <a>Benefits</a>
+                      </li>
+                      <li>
+                        <a>Requests</a>
+                      </li>
+                      <li>
+                        <a>Performance</a>
+                      </li>
+                      <li>
+                        <a>Trainings</a>
+                      </li>
+                      <li>
+                        <a>Records</a>
+                      </li>
+                    </ul>
+                    <p className="menu-label">Help</p>
+                    <ul className="menu-list">
+                      <li>
+                        <a>Help Center</a>
+                      </li>
+                      <li>
+                        <a>Settings</a>
+                      </li>
+                      <li>
+                        <a>Logout</a>
+                      </li>
+                    </ul>
+                  </aside>
+                </div>
+                {/* Main Content */}
+                <div className="column">
+                  <section className="section">
+                    <h1 className="title">Hi, {user.full_name}</h1>
+                    <p className="subtitle">This is your HR report so far</p>
+
+                    {/* First column */}
+                    <div className="columns is-mobile">
+                      <div className="column is-4">
+                        <div
+                          className="columns is-mobile is-multiline"
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                          }}
+                        >
+                          {/* Stats Cards */}
+                          <div className="column" style={{ width: "48%" }}>
+                            <div className="box has-background-light">
+                              <p className="title1">{totalEmployees}</p>
+                              <p className="subtitle">Total employees</p>
+                              <p className="has-text-success">21.5%</p>
+                            </div>
+                          </div>
+                          <div className="column" style={{ width: "48%" }}>
+                            <div className="box has-background-light">
+                              <p className="title1">23M</p>
+                              <p className="subtitle">Salaries due</p>
+                              <p className="has-text-danger">12.5%</p>
+                            </div>
+                          </div>
+                          <div className="column" style={{ width: "48%" }}>
+                            <div className="box has-background-light">
+                              <p className="title1">193</p>
+                              <p className="subtitle">Need Training</p>
+                              <p className="has-text-danger">15.5%</p>
+                            </div>
+                          </div>
+                          <div className="column" style={{ width: "48%" }}>
+                            <div className="box has-background-light">
+                              <p className="title1">45</p>
+                              <p className="subtitle">New Employees</p>
+                              <p className="has-text-success">25.5%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="column is-8">
+                        {/* Team Performance Chart */}
+                        <div className="box">
+                          <h2 className="title">Team Performance</h2>
+                          <BarChart />
+                          <canvas id="teamPerformanceChart"></canvas>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="columns is-mobile">
+                      <div className="column is-8">
+                        {/* Employees Table */}
+                        <div className="box">
+                          <h2 className="title">Employees</h2>
+                          <div className="field has-addons">
+                            <div className="control">
+                              <div className="select">
+                                <select>
+                                  <option>At office</option>
+                                  <option>Remote</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div className="control">
+                              <div className="select">
+                                <select>
+                                  <option>All job titles</option>
+                                  <option>Web Dev</option>
+                                  <option>UI Designer</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div className="control">
+                              <div className="select">
+                                <select>
+                                  <option>All status</option>
+                                  <option>Active</option>
+                                  <option>On leave</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div className="control">
+                              <input
+                                className="input"
+                                type="text"
+                                placeholder="Search employees"
+                              />
+                            </div>
+                          </div>
+                          <table className="table is-fullwidth is-striped">
+                            <thead>
+                              <tr>
+                                <th>Employees Name</th>
+                                <th>Job Title</th>
+                                <th>Line Manager</th>
+                                <th>Department</th>
+                                <th>Office</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Brenda H. Branam</td>
+                                <td>Web Dev</td>
+                                <td>@Alexander12</td>
+                                <td>Product</td>
+                                <td>5 days</td>
+                              </tr>
+                              <tr>
+                                <td>Mark J. Lopez</td>
+                                <td>UI Designer</td>
+                                <td>@Keever45</td>
+                                <td>Project</td>
+                                <td>20 days</td>
+                              </tr>
+                              <tr>
+                                <td>Doris J. Bartlett</td>
+                                <td>Web Dev</td>
+                                <td>@Alexander12</td>
+                                <td>Product</td>
+                                <td>15 days</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div className="column is-4">
+                        {/* Total Employees Pie Chart */}
+                        <div className="box">
+                          <h2 className="title">Total Employees</h2>
+                          <h2 style={{ display: "none" }}>
+                            {permanentEmployees.length > 0
+                              ? employeeArray.push(permanentEmployees.length)
+                              : ""}
+                          </h2>
+                          <h2 style={{ display: "none" }}>
+                            {internEmployees.length > 0
+                              ? employeeArray.push(internEmployees.length)
+                              : ""}
+                          </h2>
+                          <h2 style={{ display: "none" }}>
+                            {" "}
+                            {contractEmployees.length > 0
+                              ? employeeArray.push(contractEmployees.length)
+                              : ""}
+                          </h2>
+                          {isDataLoaded && (
+                            <DoughnetChart
+                              dataLabels={employeeLabels}
+                              myData={employeeArray}
+                            />
+                          )}
+
+                          <canvas>
+                            <DoughnetChart />
+                          </canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <script
+                    src="https://kit.fontawesome.com/114047c3df.js"
+                    crossOrigin="anonymous"
+                    defer
+                  ></script>
+                  {/* Chart.js */}
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script src="dashboard22.js"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+      {!isManager && <h2>You don't have permission to view this page</h2>}
+    </div>

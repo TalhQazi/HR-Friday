@@ -1,0 +1,78 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #bc9df6;
+  --secondry-color: #000000;
+  --light-blue: #57a6c8;
+  --light-gray: #d9d9d9;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.active-link {
+  background-color: var(--light-blue);
+}
+
+.chart-container {
+  height: 350px;
+  width: 100%;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+}
+
+.dashboard-tables .rdt_TableBody {
+  background-color: var(--light-gray) !important;
+}
+
+.dashboard-tables .hSQKHD {
+  font-size: 18px !important;
+  background-color: transparent !important;
+  min-height: 48px;
+}
+.dashboard-tables .hSQKHD:not(:last-of-type) {
+  border-bottom-width: 0 !important;
+}
+
+.dashboard-tables .jDljLp {
+  display: flex;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px !important;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 766px) and (min-width: 220px) {
+  .chart-container {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 767px) {
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .chart-container {
+    height: 100%;
+    width: 100%;
+  }
+} */
